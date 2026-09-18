@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
-# Pulls the live Confetti workflow's info.plist + icon.png out of Alfred's
-# synced preferences into this repo, and rebuilds Confetti.alfredworkflow
-# from them. Does NOT touch git — review the diff yourself, then commit,
-# push, bump the version in Alfred's Configure Workflow, and tag a release.
+# Pulls the live Confetti workflow's info.plist, icon.png, and compiled
+# binary out of Alfred's synced preferences into this repo, and rebuilds
+# Confetti.alfredworkflow from them. Does NOT touch git — review the diff
+# yourself, then commit, push, bump the version in Alfred's Configure
+# Workflow, and tag a release.
+#
+# The `confetti` binary itself is not rebuilt here — see build-binary.sh
+# for compiling + signing + notarizing a fresh one from confetti.swift.
 set -euo pipefail
 
 BUNDLE_ID="com.twobit-consulting.confetti"
@@ -31,10 +35,14 @@ echo "Found live workflow: $WF_DIR"
 
 cp "$WF_DIR/info.plist" "$REPO_DIR/info.plist"
 cp "$WF_DIR/icon.png" "$REPO_DIR/icon.png"
+if [ -f "$WF_DIR/confetti" ]; then
+	cp "$WF_DIR/confetti" "$REPO_DIR/confetti"
+	chmod +x "$REPO_DIR/confetti"
+fi
 
-echo "Repackaging Confetti.alfredworkflow (info.plist + icon.png only, no prefs.plist)..."
+echo "Repackaging Confetti.alfredworkflow (info.plist + icon.png + confetti binary, no prefs.plist)..."
 rm -f "$REPO_DIR/Confetti.alfredworkflow"
-(cd "$REPO_DIR" && zip -X -q Confetti.alfredworkflow info.plist icon.png)
+(cd "$REPO_DIR" && zip -X -q Confetti.alfredworkflow info.plist icon.png confetti)
 
 echo ""
 echo "Done. Diff against the last commit:"
