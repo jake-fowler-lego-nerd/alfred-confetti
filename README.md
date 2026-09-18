@@ -33,6 +33,10 @@ Download the latest `.alfredworkflow` from [Releases](../../releases) and double
 
 Building it from source yourself does need Xcode Command Line Tools (or full Xcode) plus a Developer ID certificate and notarization credentials — see [`build-binary.sh`](build-binary.sh).
 
+## Development
+
+Written with the help of Claude (Anthropic) via Claude Code — the Swift source, build/sign/notarize pipeline, and this documentation.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
