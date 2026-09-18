@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.twobit-consulting.confetti</string>
+	<key>category</key>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>2A2FC90C-5D5E-424A-9735-D3A78FC58C28</key>
@@ -210,22 +212,24 @@ app.run()</string>
 Configuration Variables:
 - DURATION: How long the confetti stays on screen in seconds (Default: 5.0)
 - PARTICLE_COUNT: Density of the confetti (Default: 14)
-- THEME: Color palette to use. Options: standard, two bit, neon, pastel, and monochrome (Default: standard)</string>
+- THEME: Color palette to use. Options: standard, two bit, neon, pastel, and monochrome (Default: standard)
+
+© 2026 Jake Fowler / [Two Bit Consulting](https://twobit-consulting.com). MIT Licensed.</string>
 	<key>uidata</key>
 	<dict>
 		<key>2A2FC90C-5D5E-424A-9735-D3A78FC58C28</key>
 		<dict>
 			<key>xpos</key>
-			<real>210.0</real>
+			<real>210</real>
 			<key>ypos</key>
-			<real>155.0</real>
+			<real>155</real>
 		</dict>
 		<key>BDA66097-A7B8-4265-A583-383FB174041F</key>
 		<dict>
 			<key>xpos</key>
-			<real>210.0</real>
+			<real>210</real>
 			<key>ypos</key>
-			<real>315.0</real>
+			<real>315</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -314,6 +318,6 @@ Configuration Variables:
 	<key>version</key>
 	<string>1.0.0</string>
 	<key>webaddress</key>
-	<string>https://twobit-consulting.com</string>
+	<string>https://github.com/jake-fowler-lego-nerd/alfred-confetti</string>
 </dict>
 </plist>
