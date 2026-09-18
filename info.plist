@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>F1A2B3C4-D5E6-4789-9ABC-DEF012345678</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BDA66097-A7B8-4265-A583-383FB174041F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Jake Fowler</string>
@@ -86,6 +99,27 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>confetti</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Fire confetti across the screen</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>F1A2B3C4-D5E6-4789-9ABC-DEF012345678</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>This workflow fires a digital confetti cannon across your screen. Use when you need to celebrate a quick win!
@@ -101,16 +135,23 @@ Configuration Variables:
 		<key>2A2FC90C-5D5E-424A-9735-D3A78FC58C28</key>
 		<dict>
 			<key>xpos</key>
-			<real>210.0</real>
+			<real>210</real>
 			<key>ypos</key>
-			<real>155.0</real>
+			<real>155</real>
 		</dict>
 		<key>BDA66097-A7B8-4265-A583-383FB174041F</key>
 		<dict>
 			<key>xpos</key>
-			<real>210.0</real>
+			<real>210</real>
 			<key>ypos</key>
-			<real>315.0</real>
+			<real>315</real>
+		</dict>
+		<key>F1A2B3C4-D5E6-4789-9ABC-DEF012345678</key>
+		<dict>
+			<key>xpos</key>
+			<real>400</real>
+			<key>ypos</key>
+			<real>155</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -197,7 +238,7 @@ Configuration Variables:
 		</dict>
 	</array>
 	<key>version</key>
-	<string>1.1.0</string>
+	<string>1.2.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/jake-fowler-lego-nerd/alfred-confetti</string>
 </dict>

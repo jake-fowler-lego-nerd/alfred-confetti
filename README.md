@@ -10,6 +10,8 @@ Fire a burst of confetti with the Hotkey `⌃⌥⌘C`.
 
 Configure the Hotkey from the workflow's Triggers if `⌃⌥⌘C` conflicts with something else.
 
+Alternatively, type the `confetti` keyword in Alfred.
+
 ## Configuration
 
 Set these in the Workflow's Configuration (Alfred Preferences → Confetti → **Configure Workflow…**):
