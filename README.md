@@ -1,28 +1,28 @@
 # Confetti
 
-An Alfred workflow that fires a confetti cannon across your screen — two bursts from the bottom corners, crossing in the middle. Use it when you need to celebrate a quick win.
-
-![Confetti firing across the screen](screenshot.png)
-
-Native macOS UI, not a shell trick: the effect ([`confetti.swift`](confetti.swift)) drops a borderless, click-through window at screen-saver level and drives two `CAEmitterLayer`s from it. It ships as a **signed, notarized, universal (arm64 + x86_64) binary** — see [`build-binary.sh`](build-binary.sh) for how it's built.
-
-## Install
-
-Download the latest `.alfredworkflow` from [Releases](../../releases) and double-click it.
+Fires a confetti cannon across your screen — two bursts from the bottom corners, crossing in the middle. Use it when you need to celebrate a quick win.
 
 ## Usage
 
-Default hotkey: `⌃⌥⌘C` (Control+Option+Command+C). Change it from Alfred's workflow list if it conflicts with something else.
+Fire a burst of confetti with the Hotkey `⌃⌥⌘C`.
+
+![Confetti firing across the screen](images/screenshot.png)
+
+Configure the Hotkey from the workflow's Triggers if `⌃⌥⌘C` conflicts with something else.
 
 ## Configuration
 
-Open the workflow in Alfred Preferences and click **Configure Workflow…** to set:
+Set these in the Workflow's Configuration (Alfred Preferences → Confetti → **Configure Workflow…**):
 
 | Field | Default | Does |
 | --- | --- | --- |
 | Duration | `5` | How long the confetti stays on screen, in seconds. |
 | Particle Count | `14` | Density of the confetti (particles emitted per second, per color). |
 | Theme | `Standard` | Color palette. Options: **Standard** (full rainbow), **Neon**, **Pastel**, **Monochrome**, **Two Bit** (a custom orange/blue/gray palette). |
+
+## Install
+
+Download the latest `.alfredworkflow` from [Releases](../../releases) and double-click it.
 
 ## Requirements
 
