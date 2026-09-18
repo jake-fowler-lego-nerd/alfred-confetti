@@ -2,6 +2,8 @@
 
 An Alfred workflow that fires a confetti cannon across your screen — two bursts from the bottom corners, crossing in the middle. Use it when you need to celebrate a quick win.
 
+![Confetti firing across the screen](screenshot.png)
+
 Native macOS UI, not a shell trick: the effect ([`confetti.swift`](confetti.swift)) drops a borderless, click-through window at screen-saver level and drives two `CAEmitterLayer`s from it. It ships as a **signed, notarized, universal (arm64 + x86_64) binary** — see [`build-binary.sh`](build-binary.sh) for how it's built.
 
 ## Install
